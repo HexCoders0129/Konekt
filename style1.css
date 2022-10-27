@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
+body {
+  font-family: "Roboto Slab";
+  min-height: 100vh;
+  background: linear-gradient(to left, #28289b, #e44e09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  width: 490px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 4rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.login-card::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  inset: 0;
+  /* transform: rotate(-5deg); */
+  transform: ;
+}
+
+.login-card-logo {
+  margin-bottom: 2rem;
+}
+
+.login-card-logo img {
+  width: 167px;
+}
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+  text-align: center;
+}
+
+.login-card a {
+  text-decoration: none;
+  color: #47477c;
+}
+
+.login-card-header {
+  margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.login-card-header h1 + div {
+  font-size: calc(1rem * 0.8);
+  opacity: 0.8;
+}
+
+.login-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3 rem;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.login-card-form:hover {
+  background-color: #ffcccc;
+  width: 200px;
+  height: 200px;
+  rotate: 180deg;
+}
+
+.login-card-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"] {
+  background: rgba(150, 91, 163, 0.15);
+  border: none;
+  outline: #47477c;
+  padding: 1rem 1rem;
+  border-radius: 100px;
+  transition: background 0.5s;
+}
+
+.login-card input:focus,
+.login-card input:hover {
+  background: white;
+}
+
+.login-card-other-social-btn a {
+  flex: 1;
+  /* background-color: rgb(255, 255, 255, 0.15); */
+  color: rgb(34, 13, 13);
+  /* border: 1px solid; */
+  padding: 0.5rem;
+  /* text-align: center; */
+  text-decoration: none;
+  transition-timing-function: cubic-bezier(0.2, -2, 0.8, 2);
+}
+
+.login-card-other-social-btn a:focus,
+.login-card-other-social-btn a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #333;
+}
